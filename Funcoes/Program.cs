@@ -74,7 +74,7 @@ namespace Funcoes
             {
                 Print("Insira o valor do raio: ");
                 double raio_circulo = double.Parse(Console.ReadLine());
-                Print("A Area do circulo é: " + CalcularArea(raio_circulo)); // Pode colocar embaixo pra mostrar que o print funciona
+                Print("A Area do circulo é: " + CalcularCirculo(raio_circulo)); // Pode colocar embaixo pra mostrar que o print funciona
             }
             else if (resposta_usuario == "2")
             {
