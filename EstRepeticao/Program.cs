@@ -8,22 +8,25 @@ namespace Funcoes
 
         static void Main(string[] args)
         {
-            // for (int i = 0; i < 10; i++) //Inicilização, Condição, Incremento.
-            //{
-            //    Console.WriteLine("Oi alguma coisa");
-            //}
-            Console.OutputEncoding = Encoding.UTF8;
-            //'/u25A2' é o código Unicode para o caractere quadrado branco.
-            // descubra outros códigos em https://unicode-table.com/pt/
-            char quadrado = '\u25A2';
-            for (int i = 0; i <= 10; i++)
+
+            // Atividade 02/09/2025
+
+            // Setando variáveis de altura e linha
+            int altura = 10; // Definirá a altura da nossa figura
+            int linha = 0; // Definirá a quantidade de caractéres especiais por linha
+
+            while (linha <= altura) // Precisamos iniciar o loop com a condição de linha menor ou igual a altura.
             {
-                for (int j = 0; j < i; j++)
-                {
-                    //write nao pula linha
-                    Console.Write(quadrado + " ");
-                }
-                Console.WriteLine();
+                // Calculando a quantidade de espaços em branco
+                int nespacos = altura - linha;
+                Console.Write(new string(' ', nespacos)); // Imprimindo os espaços em branco
+
+                // Imprimindo os asteríscos
+                Console.WriteLine(new string('*', linha));
+
+                // Incrementando a variável linha
+                linha++;
+
             }
         }
     }
